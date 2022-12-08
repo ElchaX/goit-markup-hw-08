@@ -2,8 +2,16 @@
   margin-top: 50px;
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .clients__list {
+    margin-inline: calc((100% - 738px) / 2);
+  }
+}
+
 .clients__list-icon {
   border: 1px solid var(--logo-clients-color);
 
@@ -14,4 +22,9 @@
 .clients__list-icon:hover {
   border: 1px solid var(--secondary-color);
   fill: var(--secondary-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+  }
 }

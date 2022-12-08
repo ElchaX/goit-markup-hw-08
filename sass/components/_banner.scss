@@ -1,12 +1,10 @@
 .banner {
- background: linear-gradient(var(--gradient1), var(--gradient2)),
+  width: 100vw;
+  background: linear-gradient(var(--gradient1), var(--gradient2)),
     url("../images/ImgOverlay.jpg");
-  margin: auto;
   background-size: cover;
-  max-width: 1600px;
 }
 .banner__section {
-  height: 412px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -14,12 +12,17 @@
   gap: 40px;
 }
 .banner__section-sign {
+  width: 90%;
   font-weight: 900;
   color: var(--main-color);
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .banner__section-sign {
+    width: 50%;
+  }
 }
 .banner__section-button {
   background-color: var(--secondary-color);

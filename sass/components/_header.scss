@@ -1,13 +1,15 @@
 .header {
   display: flex;
   height: 80px;
+  padding-left: 30px;
 }
 .header__navbar-contacts {
   display: flex;
-  align-items: center;
+  align-items: left;
   list-style: none;
-  gap: 50px;
-  justify-content: right;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .header__navbar {
@@ -71,4 +73,26 @@
   bottom: -32px;
   left: 0;
   border-radius: 2px;
+}
+@media screen and (max-width: 767px) {
+  .header__navbar-contacts {
+    display: none;
+  }
+  .header__navbar-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navbar-contacts {
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+    padding-inline: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    padding-right: 30px;
+  }
 }
