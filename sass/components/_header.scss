@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  height: 80px;
+}
+.header__navbar-contacts {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  justify-content: right;
+}
+
+.header__navbar {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.header__navbar-links {
+  display: flex;
+  align-items: center;
+  margin-left: 97px;
+  list-style: none;
+  gap: 50px;
+}
+.header__navbar-link {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__navbar-adress {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  gap: 10px;
+}
+.header__navbar-link:hover,
+.header__navbar-link:focus {
+  color: var(--secondary-color);
+}
+.header__navbar-adress:hover,
+.header__navbar-adress:focus {
+  color: var(--secondary-color);
+}
+.header__navbar-contacts-list {
+  stroke: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+  transition: fill, stroke 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 132px;
+}
+.header__navbar-contacts-list:hover {
+  stroke: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+.current__highlight::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--secondary-color);
+  bottom: -32px;
+  left: 0;
+  border-radius: 2px;
+}

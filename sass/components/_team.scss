@@ -1,0 +1,71 @@
+.team {
+  background-color: var(--button-portfolio-color);
+}
+.team__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+}
+.team__list__element {
+  background-color: var(--main-color);
+  text-align: center;
+  box-shadow: 0px 2px 1px 0px #00000033;
+
+  box-shadow: 0px 1px 1px 0px #00000024;
+
+  box-shadow: 0px 1px 3px 0px #0000001f;
+}
+.team__div {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.team__member-socials {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  fill: var(--logo-clients-color);
+  margin-left: 32px;
+}
+.team__member-socials__element {
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__member-socials__element:hover,
+.team__member-socials__element:focus {
+  fill: var(--main-color);
+}
+.team__member-socials__element__link {
+  display: block;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  padding: calc(50% - 10px);
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__member-socials__element__link:hover,
+.team__member-socials__element__link:focus {
+  background-color: var(--secondary-color);
+}
+
+.team__member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+.team__member-description {
+  color: var(--secondary-text-color);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.team__member {
+  display: flex;
+  height: 108px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 270px;
+  height: 168px;
+}

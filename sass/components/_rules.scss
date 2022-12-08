@@ -1,0 +1,28 @@
+.rules__list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+}
+.rules__list-item {
+  height: 226px;
+  width: 94vw;
+}
+.rules__list-item-bg {
+  background-color: var(--button-portfolio-color);
+  margin-bottom: 30px;
+}
+.rules__list-icon {
+  margin-left: calc(50% - 35px);
+  margin-top: 25px;
+}
+.rules__list-item-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+.rules__list-item-title {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 10px;
+}

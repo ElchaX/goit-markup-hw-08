@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+// .section {
+//   padding-block: 94px;
+// }
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  font-family: Raleway;
+  text-align: center;
+}
+// .container {
+//   margin: 0 auto;
+//   width: 100%;
+//     max-width: 1200px;
+
+//   padding: 0 15px;
+// }
+.header-empty {
+  display: inline-block;
+  height: 0;
+}
+.overflow-container {
+  position: relative;
+  overflow: hidden;
+}
+.overflow-container img {
+  display: block;
+}
