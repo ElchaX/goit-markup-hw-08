@@ -2,7 +2,10 @@
   width: 100vw;
   background: linear-gradient(var(--gradient1), var(--gradient2)),
     url("../images/ImgOverlay.jpg");
+
+  background-position: center center;
   background-size: cover;
+  padding: 200px 0;
 }
 .banner__section {
   display: flex;

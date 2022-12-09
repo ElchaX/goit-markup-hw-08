@@ -49,7 +49,7 @@
   color: var(--text-color);
 }
 .menu-container .menu-toggle:hover,
-.mobile-menu .link:hover {
+.mobile-link:hover {
   color: var(--secondary-color);
 }
 
@@ -59,11 +59,56 @@
   list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-menu-link {
   display: block;
   padding: 10px;
   color: var(--text-color);
   text-decoration: none;
   font-size: 40px;
   font-weight: 500;
+}
+.mobile-contacts {
+  list-style: none;
+  padding: 10px;
+  position: absolute;
+  top: 70%;
+  font-weight: 500;
+  line-height: 40px;
+}
+.mobile-contact-phone {
+  font-size: 34px;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.mobile-contact-email {
+  font-size: 24px;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.mobile-socials {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 90%;
+  gap: 20px;
+}
+.mobile-socials-element {
+  position: relative;
+}
+.mobile-socials-element:not(:nth-last-child(1))::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 22px;
+  background-color: var(--text-color);
+  bottom: 0;
+  left: calc(100% + 10px);
+  border-radius: 1px;
+}
+.mobile-socials-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--secondary-color);
 }
