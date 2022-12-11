@@ -1,11 +1,12 @@
 .banner {
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(var(--gradient1), var(--gradient2)),
     url("../images/ImgOverlayM.jpg");
-
   background-position: center center;
   background-size: cover;
-  padding: 200px 0;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  height: 400px;
 }
 
 .banner__section {
@@ -36,6 +37,8 @@
   .banner {
     background: linear-gradient(var(--gradient1), var(--gradient2)),
       url("../images/ImgOverlayD.jpg");
+    height: 600px;
+    padding: 200px 0;
   }
 }
 .banner__section-button {
