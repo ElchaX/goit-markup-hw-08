@@ -41,10 +41,11 @@
   display: flex;
   list-style: none;
   gap: 10px;
-  fill: var(--logo-clients-color);
   margin-left: 32px;
 }
 .team__member-socials__element {
+  fill: var(--logo-clients-color);
+
   transition: fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

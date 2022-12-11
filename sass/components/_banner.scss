@@ -1,12 +1,13 @@
 .banner {
   width: 100vw;
   background: linear-gradient(var(--gradient1), var(--gradient2)),
-    url("../images/ImgOverlay.jpg");
+    url("../images/ImgOverlayM.jpg");
 
   background-position: center center;
   background-size: cover;
   padding: 200px 0;
 }
+
 .banner__section {
   display: flex;
   align-items: center;
@@ -25,6 +26,16 @@
 @media screen and (min-width: 768px) {
   .banner__section-sign {
     width: 50%;
+  }
+  .banner {
+    background: linear-gradient(var(--gradient1), var(--gradient2)),
+      url("../images/ImgOverlayT.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner {
+    background: linear-gradient(var(--gradient1), var(--gradient2)),
+      url("../images/ImgOverlayD.jpg");
   }
 }
 .banner__section-button {
