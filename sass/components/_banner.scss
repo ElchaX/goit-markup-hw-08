@@ -41,6 +41,11 @@
     padding: 200px 0;
   }
 }
+@media screen and (max-width: 524px) {
+  .banner {
+    padding: 50px 0;
+  }
+}
 .banner__section-button {
   background-color: var(--secondary-color);
   color: var(--main-color);
